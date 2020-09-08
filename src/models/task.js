@@ -20,7 +20,7 @@ const taskSchema = mongoose.Schema({
 })
 
 taskSchema.pre('save', async function(next) {
-    console.log('Ran the Middleware on Task Model')
+    //console.log('Ran the Middleware on Task Model')
     next()
 })
 
